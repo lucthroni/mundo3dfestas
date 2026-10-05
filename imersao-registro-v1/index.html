@@ -12,17 +12,19 @@
 <link rel="preload" as="image" href="https://mundo3dfestas.com.br/wp-content/uploads/2026/08/dr5.png">
 <style>
   :root{
-    /* paleta: laranja #EE7848 · pêssego #F0C6A0 · creme #EFEFD3 · azul-marinho #1F4E85 · azul #336699 */
-    --cream:#F7F6E9;
-    --peach:#F6DDC4;
-    --peach-2:#F0C6A0;
-    --coral:#EE7848;
-    --coral-dark:#D25E2C;
-    --ink:#1F4E85;
-    --muted:#336699;
-    --blue:#336699;
-    --cta:#EE7848;
-    --cta-dark:#C9592A;
+    /* paleta: índigo #2E0A8F · magenta #941B5A · rosa #EA3657 · laranja #EE622B · amarelo #F5BE41 */
+    --cream:#FFF8EE;
+    --peach:#FDEBCB;
+    --peach-2:#F9D27A;
+    --coral:#EA3657;
+    --coral-dark:#941B5A;
+    --ink:#24096E;
+    --muted:#5B4B8A;
+    --blue:#EE622B;
+    --indigo:#2E0A8F;
+    --magenta:#941B5A;
+    --cta:#F5BE41;
+    --cta-dark:#D29A1C;
     --white:#fff;
     --radius:18px;
   }
@@ -40,15 +42,15 @@
   p+p{margin-top:14px}
 
   /* ---------- BOTÕES ---------- */
-  .btn{display:block;width:100%;border:0;cursor:pointer;background:var(--cta);color:#fff;font:700 17px/1.2 'Roboto',sans-serif;letter-spacing:.02em;text-transform:uppercase;padding:18px 20px;border-radius:12px;text-align:center;text-decoration:none;box-shadow:0 6px 0 var(--cta-dark);transition:transform .1s,box-shadow .1s}
+  .btn{display:block;width:100%;border:0;cursor:pointer;background:var(--cta);color:var(--ink);font:800 17px/1.2 'Roboto',sans-serif;letter-spacing:.02em;text-transform:uppercase;padding:18px 20px;border-radius:12px;text-align:center;text-decoration:none;box-shadow:0 6px 0 var(--cta-dark);transition:transform .1s,box-shadow .1s}
   .btn:hover{filter:brightness(1.05)}
   .btn:active{transform:translateY(4px);box-shadow:0 2px 0 var(--cta-dark)}
   .btn-inline{max-width:420px;margin:28px auto 0}
 
   /* ---------- HERO ---------- */
-  .hero{background:radial-gradient(120% 80% at 80% 0%,var(--peach-2) 0%,var(--peach) 45%,var(--cream) 100%);padding:20px 0 0;overflow:hidden}
+  .hero{background:radial-gradient(90% 70% at 85% 10%,rgba(234,54,87,.55) 0%,transparent 60%),linear-gradient(160deg,var(--indigo) 0%,#4A0E85 55%,var(--magenta) 100%);padding:20px 0 0;overflow:hidden}
   .hero-grid{display:grid;grid-template-columns:1fr;gap:8px;align-items:end}
-  .hero-card{background:rgba(255,255,255,.85);backdrop-filter:blur(6px);border-radius:var(--radius);padding:20px 18px 18px;box-shadow:0 10px 30px rgba(31,78,133,.12);position:relative;z-index:2}
+  .hero-card{background:rgba(255,255,255,.85);backdrop-filter:blur(6px);border-radius:var(--radius);padding:20px 18px 18px;box-shadow:0 10px 30px rgba(46,10,143,.12);position:relative;z-index:2}
   .event-top{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:12px}
   .event-name{font-family:'Roboto Slab',serif;font-weight:800;font-size:20px;letter-spacing:.02em;color:var(--coral-dark);line-height:1}
   .event-name small{display:block;font-family:'Roboto',sans-serif;font-weight:500;font-size:11px;letter-spacing:.12em;color:var(--muted);margin-bottom:4px}
@@ -75,23 +77,23 @@
   .legal{font-size:11px;color:var(--muted);text-align:center;margin-top:8px;opacity:.85}
   .legal a{color:inherit}
   .hero-photo{position:relative;display:flex;justify-content:center;margin-top:-10px}
-  .hero-photo img{width:100%;max-width:440px;height:auto;filter:drop-shadow(0 18px 30px rgba(31,78,133,.25))}
+  .hero-photo img{width:100%;max-width:440px;height:auto;filter:drop-shadow(0 18px 30px rgba(46,10,143,.25))}
 
   /* ---------- IDENTIFICAÇÃO ---------- */
   .pains{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:26px 0}
-  .pain{background:#fff;border-radius:14px;padding:18px 14px;font-weight:500;font-size:16px;border-left:4px solid var(--coral);box-shadow:0 4px 14px rgba(31,78,133,.07)}
+  .pain{background:#fff;border-radius:14px;padding:18px 14px;font-weight:500;font-size:16px;border-left:4px solid var(--coral);box-shadow:0 4px 14px rgba(46,10,143,.07)}
   .closing{max-width:680px;margin:0 auto;font-size:18px}
 
   /* ---------- OPORTUNIDADE ---------- */
-  .opportunity{background:var(--ink);color:#EFEFD3}
-  .opportunity .eyebrow{color:var(--peach-2)}
-  .opportunity h2 em{color:var(--peach-2)}
+  .opportunity{background:var(--indigo);color:#F3EEFF}
+  .opportunity .eyebrow{color:var(--cta)}
+  .opportunity h2 em{color:var(--cta)}
   .opportunity .text{max-width:700px;margin:0 auto;font-size:18px}
   .opportunity strong{color:#fff}
 
   /* ---------- APRENDIZADOS ---------- */
   .learn{display:grid;gap:14px;max-width:760px;margin:28px auto 0}
-  .learn-item{display:flex;gap:16px;align-items:flex-start;background:#fff;border-radius:var(--radius);padding:20px;box-shadow:0 6px 18px rgba(31,78,133,.08)}
+  .learn-item{display:flex;gap:16px;align-items:flex-start;background:#fff;border-radius:var(--radius);padding:20px;box-shadow:0 6px 18px rgba(46,10,143,.08)}
   .learn-num{flex:0 0 44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font:800 20px 'Roboto Slab',serif}
   .learn-item p{font-size:17px}
 
@@ -106,10 +108,10 @@
   /* ---------- OBJEÇÃO ---------- */
   .objection blockquote{font-family:'Roboto Slab',serif;font-size:clamp(24px,5.5vw,34px);font-weight:700;color:var(--coral-dark);margin-bottom:16px}
   .objection .text{max-width:680px;margin:0 auto}
-  .for-who{max-width:560px;margin:30px auto 0;background:#fff;border-radius:var(--radius);padding:24px 22px;box-shadow:0 6px 18px rgba(31,78,133,.08);text-align:left}
+  .for-who{max-width:560px;margin:30px auto 0;background:#fff;border-radius:var(--radius);padding:24px 22px;box-shadow:0 6px 18px rgba(46,10,143,.08);text-align:left}
   .for-who h3{font-size:21px;margin-bottom:14px}
   .for-who li{list-style:none;padding-left:32px;position:relative;margin:10px 0;font-size:17px}
-  .for-who li::before{content:"✓";position:absolute;left:0;top:0;width:22px;height:22px;border-radius:50%;background:var(--blue);color:#fff;font-size:13px;font-weight:700;display:grid;place-items:center}
+  .for-who li::before{content:"✓";position:absolute;left:0;top:0;width:22px;height:22px;border-radius:50%;background:var(--magenta);color:#fff;font-size:13px;font-weight:700;display:grid;place-items:center}
 
   /* ---------- EXPERT ---------- */
   .expert{background:#fff}
@@ -123,7 +125,7 @@
   .final{background:radial-gradient(100% 90% at 50% 0%,var(--peach-2),var(--peach) 60%)}
   .final .info-bar{background:#fff;max-width:520px;margin:20px auto 0}
 
-  footer{background:var(--ink);color:#EFEFD3;font-size:13px;text-align:center;padding:26px 16px}
+  footer{background:var(--indigo);color:#D9CFF5;font-size:13px;text-align:center;padding:26px 16px}
   footer a{color:#fff}
 
   /* ---------- DESKTOP ---------- */
@@ -255,7 +257,7 @@
 </section>
 
 <!-- ============ DOBRA 7 — OBJEÇÃO + PARA QUEM É ============ -->
-<section class="objection" style="background:#EFEFD3">
+<section class="objection" style="background:#F3EDFB">
   <div class="wrap center">
     <blockquote>“Mas eu não entendo nada de impressora 3D…”</blockquote>
     <div class="text">
